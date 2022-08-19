@@ -1,0 +1,383 @@
+Date: Fri, 19 Aug 2022 15:32:35 +0000 (UTC)
+Message-ID: <237297667.49.1660923155757@b93bea64ea28>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_48_1735171070.1660923155757"
+
+------=_Part_48_1735171070.1660923155757
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Writing to BigQuery</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Writing to BigQuery</h1>
+    <div class=3D"Section1">
+        <p>This article explains the process of directly writing into a Big=
+Query table using Python</p>
+<h2 id=3D"WritingtoBigQuery-Instructions"><img class=3D"emoticon emoticon-b=
+lue-star" data-emoji-id=3D"1f4d8" data-emoji-shortname=3D":blue_book:" data=
+-emoji-fallback=3D"\uD83D\uDCD8" src=3D"d5669d050d89f336acbc7523ddd2f515" w=
+idth=3D"16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue sta=
+r)">&nbsp;Instructions</h2>
+<p>As a pre-requisite you will need a Google Cloud account and Python insta=
+lled on your machine. Further, this article assumes you have created a proj=
+ect on Cloud, created a dataset, and a table within that dataset where you =
+want to write the data. Please make sure that the principals have all the a=
+ccess in the project, and the BigQuery API and BigQuery Storage API enabled=
+ for the project.</p>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>Please enable <strong>Billing </strong>on your account to be able to wri=
+te data into BigQuery table directly through Python</p>
+</div>
+</div>
+<ol>
+<li><p>First, go through <a href=3D"/wiki/spaces/DS/pages/1344438377/Readin=
+g+from+BigQuery" data-linked-resource-id=3D"1344438377" data-linked-resourc=
+e-version=3D"6" data-linked-resource-type=3D"page">Reading from BigQuery</a=
+> article to set up the client library and create a service account with it=
+s associated key.</p></li>
+<li><p>Next, create a project or use an existing project on Cloud to create=
+ a dataset and a table where you want to write the data. Make sure to creat=
+e fields for the table and select the type of data which would be inserted =
+in those fields. </p></li>
+<li><p>Create a path which would serve to be the table-id, and look like: <=
+em><strong>&lt;project-ID&gt;.&lt;dataset&gt;.&lt;table&gt;</strong></em></=
+p></li>
+<li><p>Use the code snippet below to directly write data into the BigQuery =
+table </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Confluence" data-theme=3D"Confluence">arr =3D p=
+redictions.tolist() #numpy array is not JSON-able so convert to list
+
+table_id =3D 'datascience-353212.predictions_table.predictions'
+
+rows_to_insert =3D [
+    {u'predicted_hours': arr[0]},
+    {u'predicted_hours': arr[1]},
+    {u'predicted_hours': arr[2]},
+    {u'predicted_hours': arr[3]},
+    {u'predicted_hours': arr[4]},
+    {u'predicted_hours': arr[5]},
+    {u'predicted_hours': arr[6]},
+]
+
+errors =3D client.insert_rows_json(table_id, rows_to_insert)
+if errors =3D=3D []:
+    print("Predictions have been added to BigQuery")
+else:
+    print(f'Encountered errors while adding predictions to BigQuery: {error=
+s}')</pre>=20
+</div>
+</div></li>
+<li><p>In the code snippet above, the data from =E2=80=98predictions=E2=80=
+=99 is being written into the table - <strong>=E2=80=98predictions' </stron=
+g>within the dataset - <strong>=E2=80=98predictions_table=E2=80=99</strong>=
+ of the <strong>=E2=80=98datascience=E2=80=99</strong> project. The table c=
+reated has one field <strong>=E2=80=98Predicted_Hours=E2=80=99 </strong>wit=
+h float datatype. It is important to write the same field name in the code =
+snippet as shown above.</p></li>
+<li><p><em><strong><span style=3D"color: rgb(7,71,166);">IMPORTANT</span></=
+strong></em> - Make sure the that the data you are writing into the table s=
+hould be JSON serializable. As a note =E2=80=93 Numpy arrays cannot be hand=
+led by json module. Therefore, you can convert the numpy array into a list =
+using a one line code </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Confluence" data-theme=3D"Confluence">arr =3D p=
+redictions.tolist()</pre>=20
+</div>
+</div></li>
+</ol>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>If you face any errors while running the python code, a simple google se=
+arch should help you resolve it. You can also reach out to anyone in the da=
+ta science team to help you out!</p>
+</div>
+</div>
+<h2 id=3D"WritingtoBigQuery-Relatedarticles"><img class=3D"emoticon emotico=
+n-blue-star" data-emoji-id=3D"1f4cb" data-emoji-shortname=3D":clipboard:" d=
+ata-emoji-fallback=3D"\uD83D\uDCCB" src=3D"160902fcf44b8d2cabb2b1702bab97a7=
+" width=3D"16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue =
+star)">&nbsp;Related articles</h2>=20
+<ul class=3D"content-by-label">=20
+<li>=20
+<div> <span class=3D"icon aui-icon aui-icon-small aui-iconfont-page-default=
+" title=3D"Page">Page:</span>=20
+</div>=20
+<div class=3D"details"> <a data-linked-resource-id=3D"1344209480" data-link=
+ed-resource-type=3D"page" data-linked-resource-version=3D"7" href=3D"/wiki/=
+spaces/DS/pages/1344209480/Writing+to+BigQuery">Writing to BigQuery</a>=20
+</div> </li>=20
+<li>=20
+<div> <span class=3D"icon aui-icon aui-icon-small aui-iconfont-page-default=
+" title=3D"Page">Page:</span>=20
+</div>=20
+<div class=3D"details"> <a data-linked-resource-id=3D"1344438377" data-link=
+ed-resource-type=3D"page" data-linked-resource-version=3D"6" href=3D"/wiki/=
+spaces/DS/pages/1344438377/Reading+from+BigQuery">Reading from BigQuery</a>=
+=20
+</div> </li>=20
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_48_1735171070.1660923155757
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/d5669d050d89f336acbc7523ddd2f515
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAq1BMVEVHcEwiZpkiZpkiZpkiZpki
+ZpkiZpkiZpkiZpk7iMMiZpnM1t0iZpnM1t07iMMiZpnM1t3M1t3M1t0iZplfnMo7iMM7iMM7iMM7
+iMMiZplVrO7M1t3h6O1ikLOswdCiusxNoeFCkc7Bz9l3nrtamsujxN3Z4efM3OhQpeZPo+OxyNjg
+5+zP2N9Ln95loM5FltM+jcg3dKJfnMpFjsaCp8PQ2eAtbZ1ql7lTqusm12cWAAAAGHRSTlMAUN/P
+IL+vYO/PcCCfzyAQv+9gMIDvYL/uJGE9AAABJklEQVR4Xu3QV27DMBBF0ZFVSDtxeiHV3FtqL/tf
+WSjyYyIBATT05CfgXcDBwwMsGWUDTUtmArqJVHs1iFrMOTLkDgETUmsOSWjXR7WYmIq+TSonReCK
+tGsxL6jVz/Yn5xxL59SFR3MrCQuNnFMVXtUNlFkodtBNSet2fWel5idpIY0QkXq3j2vTT+izpEt2
+UxfSb/RN6w6Eqd49rJpJe0DYclOWLJB63TBBavk7lPdrOnPSyhfC7t3je0IoMUD5jAuackH530MB
+ClCAAhSgAAUoQAFKuSDBBMXAA8mEB4oT4IEA/it0wgWdMUFj4IFODxBK/aCdcV7G6AAIP+jRQBfQ
+KvaBtsYZQrtE0qGvJ6Uuj6ArxVRoa5whOphIKdDO/HN91Ra+ARIL3guc4aKtAAAAAElFTkSuQmCC
+
+------=_Part_48_1735171070.1660923155757
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/160902fcf44b8d2cabb2b1702bab97a7
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAPFBMVEVHcEzM1t3M1t3M1t3M1t3M
+1t2Zoqg9REgpLzPM1t3M1t3M1t3BaU/BaU/BaU/CcFjgtKf////M1dqZqrWLZiLOAAAADnRSTlMA
+IJ/v/zD///8QUN9Q360w504AAADiSURBVHgB7dhVgoUwEERRIIVrw/7XOoI7HRl9fRdwgKS+8J7y
+AwWowPcsCxX6VGjn+ApRnCRxBOVbQQGipC9CYAUpxAMUQ9k4KZCMAZ52WY6lBZrLM6aDVcunreNJ
+OVYth70uZ57Luun6t90BRVn11WBUDZXFiVNNcaG+o1SaQeUBqsyg6s9ADRGBERE1txDxIfprELPf
+BgnUdie1BlB3mjPoxz6Nn+zovtbw+o99I2T/abKjv78j2ZHsSHYkUOvqsLvT3EPmnyY7aohdcwMZ
+9Beg0swpD1BhBhWnP1m0KxfnHV+T0IbfZ3ihAAAAAElFTkSuQmCC
+------=_Part_48_1735171070.1660923155757--
